@@ -77,6 +77,38 @@ qplot(x = Gender, y = Birth.Year,
   coord_cartesian(ylim = c(1962,1990))+
   ggtitle('Distribution of Birth Year of riders by Gender in all cities (Birth year between 1962 and 1990)')
 
+# or we can use this for question 3
+
+QUESTION 3 
+How old are the people renting bikes?
+  To answer this question - Washington dataset is excluded as it does not have Birth information
+
+calcAge <- function(Location_) {
+  # Calculate user age by taking the difference between year when they rode vs their birth year.
+  Location_$Age <- strtoi(strftime(Location_$Start.Time, format="%Y")) - Location_$Birth.Year
+  Location_
+}
+ny <- calcAge(nyc)
+chi <- calcAge(chi)
+
+# Remove the previously created Weekday field for `chi`.
+chi <- subset(chi, select = -c(Weekday))
+
+
+City2 <- rbind(ny, chi)
+
+ggplot(aes(x=Age, fill=City), data=City2) +
+  geom_bar(position='dodge') +
+  theme(text = element_text(size = 20)) +
+  ggtitle("Age of riders") +
+  scale_x_continuous(breaks = seq(0, 150, by = 5)) +
+  labs(x = "Age (years)")
+
+summary(City2$Age)
+
+**Summary of your question 3 results goes here.**
+  This indicates that there are invalid birth information
+Looking at the Median - it is showing that riders around the age of 36 are main customers
 
 
 ```
