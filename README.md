@@ -9,7 +9,8 @@ Post your Work on GitHub
 ### Description
 Running the git init command sets up all of the necessary files and directories that Git will use to keep track of everything. 
 cloning another developers projetc, contributing to it, creating different branches of the project etc.
-
+Installing GIT tool : https://git-scm.com/downloads.
+https://udacity.zendesk.com/hc/en-us/articles/360059987151-ND104-Programming-for-Data-Science-with-Python
 
 ### Files used
 The following file contains necessary commands used to do tasks:
