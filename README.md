@@ -1,17 +1,22 @@
 >**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
 
-### Date created
-Include the date you created this project and README file.
+#Date created
+September.20 2021
 
-### Project Title
-Replace the Project Title
+#Title
+Post your Work on GitHub
 
 ### Description
-Describe what your project is about and what it does
+Running the git init command sets up all of the necessary files and directories that Git will use to keep track of everything. 
+cloning another developers projetc, contributing to it, creating different branches of the project etc.
+
 
 ### Files used
-Include the files used
+The following file contains necessary commands used to do tasks:
+Git Commands Documentation.pdf
+The following files helps to understand the Git key terms:
+Git-KeyTerms.pdf
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Git documentation is very usefull.
 
